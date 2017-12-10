@@ -1,7 +1,7 @@
-import home from './home'
+import GoogleHome from './GoogleHome'
 import log from './log'
 export {
-    home,
+    GoogleHome,
     log
 }
 

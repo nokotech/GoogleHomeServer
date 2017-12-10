@@ -1,4 +1,4 @@
-import log from '../util/log';
+import log from '../utils/log';
 import castv2 from 'castv2-client';
 import mdns from 'mdns';
 import googletts from 'google-tts-api';

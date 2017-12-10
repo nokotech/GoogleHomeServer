@@ -1,11 +1,11 @@
-import googlehome from '../module/google-home';
+import googlehome from '../modules/google-home';
 import {log} from './index';
 import CONST from '../const';
 
 //----------------------------------------------------------------
 // GOOGLE HOME
 //----------------------------------------------------------------
-class googleHome {
+class GoogleHome {
     
     // 設定
     constructor() {
@@ -29,4 +29,4 @@ class googleHome {
     })}
 }
 
-export default new googleHome();
+export default new GoogleHome;

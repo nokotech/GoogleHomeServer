@@ -1,6 +1,6 @@
 import express from 'express';
 import CONST from './const';
-import {crateResponse, home, log} from './util/index'
+import {crateResponse, GoogleHome, log} from './utils/index'
 
 //----------------------------------------------------------------
 // EXPRESS
@@ -8,15 +8,15 @@ const app = express();
 app.use(log.express);
 // app.use(express.static(__dirname + '/public'));
 
-app.get('/', (req, res, next) => {
+app.get('/', (req, res) => {
   const response = {
-    msg: 'こんにちは。私はグーグルホームです。',
+    msg: 'こんにちは。私はGoogle Homeです。',
     play: 'http://www.hmix.net/music/n/n72.mp3'
   }
   // notify(response.msg);
   // play(response.play);
   
-  home.notify(response.msg).then(isCall => {
+  GoogleHome.notify(response.msg).then(isCall => {
     log.info( `${isCall?" [TRUE]":"[FALSE]"} -- ${log.json(response)}`);
   })
   crateResponse(res, response)
