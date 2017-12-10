@@ -18,8 +18,8 @@ app.get('/', (req, res) => {
   
   GoogleHome.notify(response.msg).then(isCall => {
     log.info( `${isCall?" [TRUE]":"[FALSE]"} -- ${log.json(response)}`);
+    crateResponse(res, {call: isCall})
   })
-  crateResponse(res, response)
 })
 
 const server = app.listen(CONST.SERVER_PORT, () => {

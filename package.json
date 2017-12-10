@@ -5,6 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "node --experimental-modules src/server.mjs",
+    "lint": "eslint src/server.mjs",
+    "mocha": "mocha test/test.mjs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,7 +20,11 @@
   },
   "homepage": "https://github.com/nokotech/GoogleHomeServer#readme",
   "devDependencies": {
-    "google-home-notifier": "^1.2.0"
+    "babel-preset-es2015": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "google-home-notifier": "^1.2.0",
+    "mocha": "^4.0.1",
+    "supertest": "^3.0.0"
   },
   "dependencies": {
     "log4js": "^2.3.12"
