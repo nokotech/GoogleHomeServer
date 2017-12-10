@@ -1,0 +1,26 @@
+{
+  "name": "goo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node --experimental-modules src/server.mjs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nokotech/GoogleHomeServer.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nokotech/GoogleHomeServer/issues"
+  },
+  "homepage": "https://github.com/nokotech/GoogleHomeServer#readme",
+  "devDependencies": {
+    "google-home-notifier": "^1.2.0"
+  },
+  "dependencies": {
+    "log4js": "^2.3.12"
+  }
+}
