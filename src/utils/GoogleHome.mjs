@@ -10,6 +10,9 @@ class GoogleHome {
     // 設定
     constructor() {
         googlehome.device(CONST.DEVICE_ID, CONST.LANG_JA);
+        this.notify("セットアップ完了！").then(isCall => {
+            log.info( `${isCall?" [TRUE]":"[FALSE]"} -- ${log.json("セットアップ完了！")}`);
+        })
     }
 
     // 通知
