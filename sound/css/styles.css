@@ -1,0 +1,73 @@
+@import url('option.css');
+
+body {
+    background-color: yellow;
+    margin: 0px;
+}
+
+/*==============================================*/
+/* HEADER
+/*==============================================*/
+#header {
+    width: 100%;
+    background-color: gray;
+}
+
+/*==============================================*/
+/* CONTENTS
+/*==============================================*/
+#date {
+    /* width: 100%;
+    position: absolute;
+    top: 100px;
+    right: 0px;
+    left: 0px;
+    margin: auto; */
+    margin: 8px 8px;
+    padding: 16px 0;
+    text-align: center;
+    font-size: 5vw;
+    background-color: white;
+    border-radius: 16px;
+}
+
+.time_pick {
+    display: initial;
+}
+
+.time_pick #timepicker {
+    font-size: 4vw;
+    padding: 4px;
+    text-align: center;
+}
+
+#alert_set {
+    font-size: 3vw;
+    /* background-color: #f3981d; */
+    color: #EEE;
+}
+
+#set_time {
+    font-size: 3vw;
+    /* background-color: #f3981d; */
+    color: #E00;
+    display: none;
+}
+
+/*==============================================*/
+/* FOOTER
+/*==============================================*/
+footer {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    background-color: rgb(32, 32, 32);
+    overflow: hidden;
+}
+
+footer div {
+    text-align: center;
+    line-height: 28px;
+    color: #DDD;
+    padding: 8px;
+}
