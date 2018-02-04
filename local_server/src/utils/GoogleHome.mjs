@@ -15,6 +15,12 @@ class GoogleHome {
         })
     }
 
+    // セットアップ
+    setup() { return new Promise((resolve) => {
+        googlehome.device(CONST.DEVICE_ID, CONST.LANG_JA);
+        resolve(true)
+    })}
+
     // 通知
     notify(msg) { return new Promise((resolve) => {
         googlehome.notify(msg, res => {

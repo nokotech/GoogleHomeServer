@@ -3,17 +3,14 @@ import assert from 'assert'
 
 describe('get', () => {
 
+    const agent = request.agent("http://localhost:8080") 
+
     it('Hello mocha', (done) => {
-        var msg = 'mocha';
-        request("http://localhost:8091")
-        .get('/')
-        .expect(200)
-        .end(function(err, res){
+        agent.get("").end((err, res) => {
             if(err) throw err;
-            assert.deepEqual( res.body, {call: true} );
+            assert.deepEqual( res.body, {call: false} );
             done();
         });
-        
     })
 
 })
